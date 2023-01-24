@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC-Aires</title>
+    <link rel="stylesheet" href="./build/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="menu">
+        <div class="container">
+            <div class="menu__logo">
+                <h1>Airesdev</h1>
+            </div> 
+            <nav>
+                <ul class="menu__item">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="menu__item--resume" href="./src/C JCAires 2022I.pdf" target="_blank">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="social">
+        <ul class="social__media">
+            <li class="github"><a href="https://github.com/JC-Aires"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/joseaires/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li class="mail"><a href="mailto:j.c.aires@hotmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <div class="email">
+        <a href="mailto:j.c.aires@hotmail.com" class="email__media">j.c.aires@hotmail.com</a>
+    </div>
+    <section id="home" class="bio">
+        <div class="container">
+            <div class="bio__details">
+                <p>I´m <b class="bio__details__name">Jose Carlos Aires</b>,<br>Front-end Developer.<br>
+                    <span class="bio__details__minicv">I'm an eletrical engineer changing the career path to a Full Stack Python Developer.
+                        Currently attending the EBAC (Escola Britanica de Artes Criativas e Tecnologia) Full Stack Python Program.
+                    </span>
+                </p>
+                <a href="mailto:j.c.aires@hotmail.com" class="button button--primary" target="_blank">Contact Me</a>
+            </div>
+            <img class="bio__avatar" src="./images/jca.png" alt="Foto de Jose Carlos Aires">
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <div class="container">
+            <div>
+                <h2>Skills</h2>
+                <ul class="skills__items" data-aos="zoom-in-up">
+                    <li>
+                        <h3>HTML <i class="fa-brands fa-html5"></i></h3>
+                        <ul>
+                            <li class="skills__items--bullet">Have been working in several exercises since October, 2022, when EBAC Full Stack Python Developer course started.</li>
+                            <li class="skills__items--bullet">Check some of the work in my <a href="https://github.com/JC-Aires?tab=repositories">github</a> repositories section.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>CSS <i class="fa-brands fa-css3-alt"></i></h3>
+                        <ul>
+                            <li class="skills__items--bullet">In the same way, have been using CSS not only in HTML pages, but also during the course sections using Sass, Less, Gulp, Grunt and Parcel, among others.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>JavaScript <i class="fa-brands fa-square-js"></i></h3>
+                        <ul>
+                            <li class="skills__items--bullet">Designed and developed User Interface using HTML5, CSS, and JavaScript.</li>
+                            <li class="skills__items--bullet">Created sites using various components, and theming semantically with HTML, CSS and adding interactivity with JavaScript and libraries like jQuery.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Sass <i class="fa-brands fa-sass"></i> | Less <i class="fa-brands fa-less"></i></h3>
+                        <ul>
+                            <li class="skills__items--bullet">Comfortable working with CSS preprocessors like SASS/LESS.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Gulp <i class="fa-brands fa-gulp"></i> | Grunt <i class="fa-brands fa-grunt"></i></h3>
+                        <ul>
+                            <li class="skills__items--bullet">Some experience working with package managers and automation tools like Gulp, Grunt and NPM.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Python <i class="fa-brands fa-python"></i></h3>
+                        <p>PCEP-30-2 Certified Entry-Level Python Programmer, issued by the Python Institute in May 27, 2022.</p>
+                        <img src="./images/pcep-30-02-pcep-certified-entry-level-python-programmer.png" alt="PCEP-30-2 Certified Badge">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="portfolio">
+        <div class="container">
+            <h2 class="portfolio__header">Portfolio</h2>
+            <div class="portfolio__items" data-aos="zoom-in-up">
+                <article>
+                    <img src="./images/airesdev.png" alt="Portfolio - Projeto X">
+                    <h3>Airesdev</h3>
+                    <p>This portfolio webpage, created using Sass, Google Fonts, AOS and Font Awesome. Follows BEM best practices.</p>
+                    <a href="#home" target="_blank">Check It</a>
+                </article>
+                <article>
+                    <img src="./images/soon.png" alt="Portfolio - Projeto X">
+                    <h3>Project 2</h3>
+                    <p>Project Description</p>
+                    <a href="#">Check It</a>
+                </article>
+                <article>
+                    <img src="./images/soon.png" alt="Portfolio - Projeto X">
+                    <h3>Project 3</h3>
+                    <p>Project Description</p>
+                    <a href="#">Check It</a>
+                </article>
+                <article>
+                    <img src="./images/soon.png" alt="Portfolio - Projeto X">
+                    <h3>Project 4</h3>
+                    <p>Project Description</p>
+                    <a href="#">Check It</a>
+                </article>
+                <article>
+                    <img src="./images/soon.png" alt="Portfolio - Projeto X">
+                    <h3>Project 5</h3>
+                    <p>Project Description</p>
+                    <a href="#">Check It</a>
+                </article>
+                <article>
+                    <img src="./images/soon.png" alt="Portfolio - Projeto X">
+                    <h3>Project 6</h3>
+                    <p>Project Description</p>
+                    <a href="#">Check It</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="contact__header">Contact</h2>
+            <div class="contact__items" data-aos="zoom-in-up">
+                <p>I’m currently looking for any <span class="contact__items--highlight">Python</span> or <span class="contact__items--highlight">Front-end development</span> job opportunities. But even if you have a question or just want 
+                    to say hello, I’ll try my best to answer!</p>
+                <a class="contact__items--mail" href="mailto:j.c.aires@hotmail.com" target="_blank">Email Me</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2023 Jose Carlos Aires. All Rights Reserved.
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/3fbf89f3f9.js" crossorigin="anonymous"></script>
+    <script src="./src/main.js"></script>
+</body>
+</html>
