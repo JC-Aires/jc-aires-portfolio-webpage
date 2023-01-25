@@ -17,7 +17,8 @@
     border-bottom: 2px solid variaveis.$corDoTextoPrincipal;
 
     @media (max-width: 768px) {
-        min-height: 60vh;
+        min-height: 80vh;
+        border: none;
     }
 }
 
@@ -56,7 +57,7 @@ h2 {
     margin: 0px auto;
 
     @media (max-width: 768px) {
-        width: 70%;
+        max-width: 700px;
         text-align: center;
     }
 
@@ -171,7 +172,6 @@ h2 {
             margin-top: 16px;
 
             @media (max-width: 768px) {
-                width: 90%;
                 justify-content: center;
                 margin-top: 2em;
             }
@@ -197,6 +197,7 @@ h2 {
             @include button();
 
             @media (max-width: 768px) {
+                margin-top: 96px;
                 margin-bottom: 24px;
             }
         }
@@ -265,6 +266,7 @@ h2 {
 
         @media (max-width: 1023px) {
             min-height: 70vh;
+            width: 70%;
         }
     }
 }
@@ -288,6 +290,8 @@ h2 {
 
         @media (max-width: 768px) {
             display: block;
+            width: 88%;
+            margin: 0 auto;
         }
 
         h2 {
@@ -345,6 +349,9 @@ h2 {
     .container {
         border-bottom: 2px solid variaveis.$corDoTextoPrincipal;
         
+        @media (max-width: 768) {
+            border: none;
+        }
     }
 }
 
@@ -360,13 +367,14 @@ h2 {
         @media (max-width: 768px) {
             display: flex;
             flex-direction: column;
+            padding: 0 20px;
         }
 
         p {
             font-size: 24px;
-            width: 50%;
+            width: 60%;
             text-align: justify;
-            margin: 0 auto;
+            margin: 0 0 0 400px;
 
             @media (max-width: 768px) {
                 width: 90%;

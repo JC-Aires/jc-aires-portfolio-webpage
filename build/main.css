@@ -37,7 +37,7 @@ h2 {
 }
 @media (max-width: 768px) {
   .container {
-    width: 70%;
+    max-width: 700px;
     text-align: center;
   }
 }
@@ -148,7 +148,6 @@ h2 {
 }
 @media (max-width: 768px) {
   .bio__details__minicv {
-    width: 90%;
     justify-content: center;
     margin-top: 2em;
   }
@@ -177,6 +176,7 @@ h2 {
 }
 @media (max-width: 768px) {
   .bio__details a {
+    margin-top: 96px;
     margin-bottom: 24px;
   }
 }
@@ -191,7 +191,8 @@ h2 {
 }
 @media (max-width: 768px) {
   .bio .container {
-    min-height: 60vh;
+    min-height: 80vh;
+    border: none;
   }
 }
 
@@ -251,12 +252,14 @@ h2 {
 }
 @media (max-width: 768px) {
   .skills .container {
-    min-height: 60vh;
+    min-height: 80vh;
+    border: none;
   }
 }
 @media (max-width: 1023px) {
   .skills .container {
     min-height: 70vh;
+    width: 70%;
   }
 }
 
@@ -280,6 +283,8 @@ h2 {
 @media (max-width: 768px) {
   .portfolio__items {
     display: block;
+    width: 88%;
+    margin: 0 auto;
   }
 }
 .portfolio__items h2 {
@@ -333,6 +338,11 @@ h2 {
 .portfolio .container {
   border-bottom: 2px solid #9ca7c9;
 }
+@media (max-width: 768) {
+  .portfolio .container {
+    border: none;
+  }
+}
 
 .contact__header {
   margin-bottom: 48px;
@@ -344,13 +354,14 @@ h2 {
   .contact__items {
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
   }
 }
 .contact__items p {
   font-size: 24px;
-  width: 50%;
+  width: 60%;
   text-align: justify;
-  margin: 0 auto;
+  margin: 0 0 0 400px;
 }
 @media (max-width: 768px) {
   .contact__items p {
