@@ -37,13 +37,13 @@ h2 {
 }
 @media (max-width: 768px) {
   .container {
-    max-width: 80vw;
+    width: 70%;
     text-align: center;
   }
 }
 @media (max-width: 1023px) {
   .container {
-    max-width: 84vw;
+    width: 80%;
     text-align: center;
   }
 }
@@ -397,9 +397,9 @@ h2 {
 footer {
   text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 844px) {
   footer {
-    margin-top: 128px;
+    padding: 48px 0;
   }
 }
 @media (max-width: 1023px) {
@@ -470,7 +470,7 @@ footer {
 }
 @media (max-width: 768px) {
   .email__media {
-    right: 4px;
+    right: 0px;
   }
 }
 @media (max-width: 1023px) {

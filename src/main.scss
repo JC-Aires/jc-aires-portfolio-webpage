@@ -56,12 +56,12 @@ h2 {
     margin: 0px auto;
 
     @media (max-width: 768px) {
-        max-width: 80vw;
+        width: 70%;
         text-align: center;
     }
 
     @media (max-width: 1023px) {
-        max-width: 84vw;
+        width: 80%;
         text-align: center;
     }
 }
@@ -412,8 +412,8 @@ h2 {
 footer {
     text-align: center;
 
-    @media (max-width: 768px) {
-        margin-top: 128px;
+    @media (max-width: 844px) {
+        padding: 48px 0;
     }
 
     @media (max-width: 1023px) {
@@ -485,7 +485,7 @@ footer {
         transition: all 0.4s ease-in-out;
 
         @media (max-width: 768px) {
-            right: 4px;
+            right: 0px;
         }
 
         @media (max-width: 1023px) {
