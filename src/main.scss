@@ -153,6 +153,7 @@ h2 {
 
     &__avatar {
         border-radius: 16px;
+        height: 400px;
 
         @media (max-width: 768px) {
             display: none;
@@ -375,6 +376,7 @@ h2 {
 
     &__items {
         display: block;
+        text-align: center;
 
         @media (max-width: 768px) {
             display: flex;
@@ -445,7 +447,7 @@ footer {
     &__media {
         position: fixed;
         top: 36vh;
-        left: 40px;
+        left: 20px;
         padding: 0px;
         margin: 0px;
 

@@ -131,6 +131,7 @@ h2 {
 }
 .hero__avatar {
   border-radius: 16px;
+  height: 400px;
 }
 @media (max-width: 768px) {
   .hero__avatar {
@@ -361,6 +362,7 @@ h2 {
 }
 .contact__items {
   display: block;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .contact__items {
@@ -435,7 +437,7 @@ footer {
 .social__media {
   position: fixed;
   top: 36vh;
-  left: 40px;
+  left: 20px;
   padding: 0px;
   margin: 0px;
 }
