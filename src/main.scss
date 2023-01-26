@@ -7,6 +7,7 @@
     font-family: 'Open Sans', sans-serif;
     list-style: none;
     color: variaveis.$corDoTextoPrincipal;
+    text-decoration: none;
 }
 
 @mixin secao() {
@@ -17,7 +18,7 @@
     border-bottom: 2px solid variaveis.$corDoTextoPrincipal;
 
     @media (max-width: 768px) {
-        border: none;
+        width: 70%;
     }
 }
 
@@ -143,8 +144,9 @@ h2 {
     }
 }
 
-.bio {
-    scroll-margin-top: 77px;
+.hero {
+    scroll-margin-top: 78px;
+
     @media (max-width: 768px) {
         scroll-margin-top: 100px;
     }
@@ -173,6 +175,7 @@ h2 {
             @media (max-width: 768px) {
                 justify-content: center;
                 margin-top: 2em;
+                width: 100%;
             }
         }
 
@@ -196,8 +199,12 @@ h2 {
             @include button();
 
             @media (max-width: 768px) {
-                margin-top: 96px;
+                margin-top: 72px;
                 margin-bottom: 24px;
+            }
+
+            @media (max-width: 1023px) {
+                margin-bottom: 48px;
             }
         }
     }
@@ -265,8 +272,12 @@ h2 {
 
         @media (max-width: 1023px) {
             min-height: 70vh;
-            width: 70%;
+            width: 80%;
             margin-bottom: 4em;
+        }
+
+        @media (max-width: 768px) {
+            width: 70%;
         }
     }
 }
@@ -350,7 +361,7 @@ h2 {
         border-bottom: 2px solid variaveis.$corDoTextoPrincipal;
         
         @media (max-width: 768px) {
-            border: none;
+            width: 75%;
             margin-bottom: 4em;
         }
     }
@@ -412,14 +423,14 @@ h2 {
     }
 
     .container {
-        height: 50vh;
+        height: 70vh;
     }
 }
 
 footer {
     text-align: center;
 
-    @media (max-width: 844px) {
+    @media (max-width: 768px) {
         padding: 48px 0;
     }
 

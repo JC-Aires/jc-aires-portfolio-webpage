@@ -5,6 +5,7 @@
   font-family: "Open Sans", sans-serif;
   list-style: none;
   color: #9ca7c9;
+  text-decoration: none;
 }
 
 body {
@@ -120,26 +121,26 @@ h2 {
   }
 }
 
-.bio {
-  scroll-margin-top: 77px;
+.hero {
+  scroll-margin-top: 78px;
 }
 @media (max-width: 768px) {
-  .bio {
+  .hero {
     scroll-margin-top: 100px;
   }
 }
-.bio__avatar {
+.hero__avatar {
   border-radius: 16px;
 }
 @media (max-width: 768px) {
-  .bio__avatar {
+  .hero__avatar {
     display: none;
   }
 }
-.bio__details__name {
+.hero__details__name {
   color: #ccd6f6;
 }
-.bio__details__minicv {
+.hero__details__minicv {
   font-size: 16px;
   display: inline-block;
   width: 80%;
@@ -147,20 +148,21 @@ h2 {
   margin-top: 16px;
 }
 @media (max-width: 768px) {
-  .bio__details__minicv {
+  .hero__details__minicv {
     justify-content: center;
     margin-top: 2em;
+    width: 100%;
   }
 }
-.bio__details p {
+.hero__details p {
   font-size: 48px;
 }
 @media (max-width: 768px) {
-  .bio__details p {
+  .hero__details p {
     font-size: 24px;
   }
 }
-.bio__details a {
+.hero__details a {
   display: inline-block;
   text-decoration: none;
   padding: 16px 24px;
@@ -170,17 +172,22 @@ h2 {
   border-radius: 4px;
   margin-top: 48px;
 }
-.bio__details a:hover {
+.hero__details a:hover {
   color: #64ffda;
   font-weight: bold;
 }
 @media (max-width: 768px) {
-  .bio__details a {
-    margin-top: 96px;
+  .hero__details a {
+    margin-top: 72px;
     margin-bottom: 24px;
   }
 }
-.bio .container {
+@media (max-width: 1023px) {
+  .hero__details a {
+    margin-bottom: 48px;
+  }
+}
+.hero .container {
   display: flex;
   min-height: 90vh;
   align-items: flex-start;
@@ -190,8 +197,8 @@ h2 {
   min-height: 100vh;
 }
 @media (max-width: 768px) {
-  .bio .container {
-    border: none;
+  .hero .container {
+    width: 70%;
   }
 }
 
@@ -251,14 +258,19 @@ h2 {
 }
 @media (max-width: 768px) {
   .skills .container {
-    border: none;
+    width: 70%;
   }
 }
 @media (max-width: 1023px) {
   .skills .container {
     min-height: 70vh;
-    width: 70%;
+    width: 80%;
     margin-bottom: 4em;
+  }
+}
+@media (max-width: 768px) {
+  .skills .container {
+    width: 70%;
   }
 }
 
@@ -339,7 +351,7 @@ h2 {
 }
 @media (max-width: 768px) {
   .portfolio .container {
-    border: none;
+    width: 75%;
     margin-bottom: 4em;
   }
 }
@@ -400,13 +412,13 @@ h2 {
   color: #64ffda;
 }
 .contact .container {
-  height: 50vh;
+  height: 70vh;
 }
 
 footer {
   text-align: center;
 }
-@media (max-width: 844px) {
+@media (max-width: 768px) {
   footer {
     padding: 48px 0;
   }
