@@ -88,6 +88,10 @@ h2 {
   color: #64ffda;
   font-weight: bold;
 }
+.menu__item li a.active {
+  color: #64ffda;
+  font-weight: bold;
+}
 .menu__item--resume {
   padding: 8px 16px;
   color: #64ffda;
@@ -195,7 +199,7 @@ h2 {
   justify-content: space-between;
   border-bottom: 2px solid #9ca7c9;
   align-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 @media (max-width: 768px) {
   .hero .container {
@@ -357,6 +361,9 @@ h2 {
   }
 }
 
+.contact {
+  scroll-margin-top: 80px;
+}
 .contact__header {
   margin-bottom: 48px;
 }
@@ -419,6 +426,7 @@ h2 {
 
 footer {
   text-align: center;
+  margin-bottom: 40px;
 }
 @media (max-width: 768px) {
   footer {
