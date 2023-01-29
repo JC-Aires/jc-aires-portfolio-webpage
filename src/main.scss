@@ -170,13 +170,28 @@ h2 {
     &__details {
         
         &__name {
-            color: variaveis.$corDoTextoSecundario;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 48px;
+            animation: neon 1.2s ease infinite;
+            letter-spacing: 1px;
+
+            @keyframes neon {
+                0%,
+                100% {
+                    text-shadow: 0 0 10px variaveis.$corDeHighlight, 0 0 20px variaveis.$corDeHighlight, 0 0 20px variaveis.$corDeHighlight, 0 0 20px variaveis.$corDeHighlight, 0 0 12px variaveis.$corDoTextoPrincipal, 2px 2px 2px variaveis.$corDoTextoSecundario;
+                    color: variaveis.$corDeHighlight;
+                }
+                50% {
+                    text-shadow: 0 0 1px variaveis.$corDoTextoPrincipal, 0 0 2px variaveis.$corDoTextoPrincipal, 0 0 2px variaveis.$corDoTextoPrincipal, 0 0 2px variaveis.$corDoTextoPrincipal, 0 0 2px variaveis.$corDoTextoPrincipal, 2px 2px 1px variaveis.$corDoTextoPrincipal;
+                    color: variaveis.$corDoTextoSecundario;
+                }
+            }
         }
         
         &__minicv{
             font-size: 16px;
             display: inline-block;
-            width: 80%;
+            width: 82%;
             text-align: justify;
             margin-top: 16px;
 
@@ -228,7 +243,7 @@ h2 {
     scroll-margin-top: 56px;
 
     @media (max-width: 768px) {
-        scroll-margin-top: 100px;
+        scroll-margin-top: 80px;
     }
 
     &__items {
@@ -377,6 +392,10 @@ h2 {
 
 .contact {
     scroll-margin-top: 80px;
+
+    @media (max-width: 768px) {
+        scroll-margin-top: 104px;
+    }
 
     &__header {
         margin-bottom: 48px;

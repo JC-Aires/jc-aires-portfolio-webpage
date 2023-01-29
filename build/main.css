@@ -143,12 +143,25 @@ h2 {
   }
 }
 .hero__details__name {
-  color: #ccd6f6;
+  font-family: "Orbitron", sans-serif;
+  font-size: 48px;
+  animation: neon 1.2s ease infinite;
+  letter-spacing: 1px;
+}
+@keyframes neon {
+  0%, 100% {
+    text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 20px #64ffda, 0 0 20px #64ffda, 0 0 12px #9ca7c9, 2px 2px 2px #ccd6f6;
+    color: #64ffda;
+  }
+  50% {
+    text-shadow: 0 0 1px #9ca7c9, 0 0 2px #9ca7c9, 0 0 2px #9ca7c9, 0 0 2px #9ca7c9, 0 0 2px #9ca7c9, 2px 2px 1px #9ca7c9;
+    color: #ccd6f6;
+  }
 }
 .hero__details__minicv {
   font-size: 16px;
   display: inline-block;
-  width: 80%;
+  width: 82%;
   text-align: justify;
   margin-top: 16px;
 }
@@ -212,7 +225,7 @@ h2 {
 }
 @media (max-width: 768px) {
   .skills {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 80px;
   }
 }
 .skills__items {
@@ -363,6 +376,11 @@ h2 {
 
 .contact {
   scroll-margin-top: 80px;
+}
+@media (max-width: 768px) {
+  .contact {
+    scroll-margin-top: 104px;
+  }
 }
 .contact__header {
   margin-bottom: 48px;
