@@ -172,21 +172,57 @@ h2 {
         &__name {
             font-family: 'Orbitron', sans-serif;
             font-size: 48px;
-            animation: neon 1.2s ease infinite;
+            animation: lights 5s 750ms linear infinite;
             letter-spacing: 1px;
 
-            @keyframes neon {
-                0%,
+            @keyframes lights {
+                0% {
+                    color: hsl(230, 40%, 80%);
+                    text-shadow:
+                    0 0 1em hsla(320, 100%, 50%, 0.2),
+                    0 0 0.125em hsla(320, 100%, 60%, 0.3),
+                    -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+                    1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+                }
+                
+                30% { 
+                    color: hsl(230, 80%, 90%);
+                    text-shadow:
+                    0 0 1em hsla(320, 100%, 50%, 0.5),
+                    0 0 0.125em hsla(320, 100%, 60%, 0.5),
+                    -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+                    0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+                }
+                
+                40% { 
+                    color: hsl(230, 100%, 95%);
+                    text-shadow:
+                    0 0 1em hsla(320, 100%, 50%, 0.5),
+                    0 0 0.125em hsla(320, 100%, 90%, 0.5),
+                    -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+                    0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+                }
+                
+                70% {
+                    color: hsl(230, 80%, 90%);
+                    text-shadow:
+                    0 0 1em hsla(320, 100%, 50%, 0.5),
+                    0 0 0.125em hsla(320, 100%, 60%, 0.5),
+                    0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+                    -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+                }
+                
                 100% {
-                    text-shadow: 0 0 10px variaveis.$corDeHighlight, 0 0 20px variaveis.$corDeHighlight, 0 0 20px variaveis.$corDeHighlight, 0 0 20px variaveis.$corDeHighlight, 0 0 12px variaveis.$corDoTextoPrincipal, 2px 2px 2px variaveis.$corDoTextoSecundario;
-                    color: variaveis.$corDeHighlight;
+                    color: hsl(230, 40%, 80%);
+                    text-shadow:
+                    0 0 1em hsla(320, 100%, 50%, 0.2),
+                    0 0 0.125em hsla(320, 100%, 60%, 0.3),
+                    1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+                    -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
                 }
-                50% {
-                    text-shadow: 0 0 1px variaveis.$corDoTextoPrincipal, 0 0 2px variaveis.$corDoTextoPrincipal, 0 0 2px variaveis.$corDoTextoPrincipal, 0 0 2px variaveis.$corDoTextoPrincipal, 0 0 2px variaveis.$corDoTextoPrincipal, 2px 2px 1px variaveis.$corDoTextoPrincipal;
-                    color: variaveis.$corDoTextoSecundario;
-                }
+                
             }
-        }
+        } 
         
         &__minicv{
             font-size: 16px;

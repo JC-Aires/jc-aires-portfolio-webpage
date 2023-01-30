@@ -145,17 +145,29 @@ h2 {
 .hero__details__name {
   font-family: "Orbitron", sans-serif;
   font-size: 48px;
-  animation: neon 1.2s ease infinite;
+  animation: lights 5s 750ms linear infinite;
   letter-spacing: 1px;
 }
-@keyframes neon {
-  0%, 100% {
-    text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda, 0 0 20px #64ffda, 0 0 20px #64ffda, 0 0 12px #9ca7c9, 2px 2px 2px #ccd6f6;
-    color: #64ffda;
+@keyframes lights {
+  0% {
+    color: hsl(230deg, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.2), 0 0 0.125em hsla(320deg, 100%, 60%, 0.3), -1em -0.125em 0.5em hsla(40deg, 100%, 60%, 0), 1em 0.125em 0.5em hsla(200deg, 100%, 60%, 0);
   }
-  50% {
-    text-shadow: 0 0 1px #9ca7c9, 0 0 2px #9ca7c9, 0 0 2px #9ca7c9, 0 0 2px #9ca7c9, 0 0 2px #9ca7c9, 2px 2px 1px #9ca7c9;
-    color: #ccd6f6;
+  30% {
+    color: hsl(230deg, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.5), 0 0 0.125em hsla(320deg, 100%, 60%, 0.5), -0.5em -0.125em 0.25em hsla(40deg, 100%, 60%, 0.2), 0.5em 0.125em 0.25em hsla(200deg, 100%, 60%, 0.4);
+  }
+  40% {
+    color: hsl(230deg, 100%, 95%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.5), 0 0 0.125em hsla(320deg, 100%, 90%, 0.5), -0.25em -0.125em 0.125em hsla(40deg, 100%, 60%, 0.2), 0.25em 0.125em 0.125em hsla(200deg, 100%, 60%, 0.4);
+  }
+  70% {
+    color: hsl(230deg, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.5), 0 0 0.125em hsla(320deg, 100%, 60%, 0.5), 0.5em -0.125em 0.25em hsla(40deg, 100%, 60%, 0.2), -0.5em 0.125em 0.25em hsla(200deg, 100%, 60%, 0.4);
+  }
+  100% {
+    color: hsl(230deg, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.2), 0 0 0.125em hsla(320deg, 100%, 60%, 0.3), 1em -0.125em 0.5em hsla(40deg, 100%, 60%, 0), -1em 0.125em 0.5em hsla(200deg, 100%, 60%, 0);
   }
 }
 .hero__details__minicv {
