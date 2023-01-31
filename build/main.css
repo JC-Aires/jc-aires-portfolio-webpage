@@ -32,7 +32,7 @@ h2 {
 }
 
 .container {
-  max-width: 75vw;
+  max-width: 65vw;
   width: 100%;
   margin: 0px auto;
 }
@@ -344,7 +344,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 380px;
+  height: 400px;
   margin-bottom: 48px;
   text-align: center;
   border-radius: 4px;
