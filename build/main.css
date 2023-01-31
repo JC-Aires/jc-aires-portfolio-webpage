@@ -142,9 +142,13 @@ h2 {
     display: none;
   }
 }
+@media (max-width: 1023px) {
+  .hero__avatar {
+    height: 300px;
+  }
+}
 .hero__details__name {
   font-family: "Orbitron", sans-serif;
-  font-size: 48px;
   animation: lights 5s 750ms linear infinite;
   letter-spacing: 1px;
 }
@@ -187,9 +191,14 @@ h2 {
 .hero__details p {
   font-size: 48px;
 }
+@media (max-width: 1023px) {
+  .hero__details p {
+    font-size: 32px;
+  }
+}
 @media (max-width: 768px) {
   .hero__details p {
-    font-size: 24px;
+    font-size: 36px;
   }
 }
 .hero__details a {
@@ -219,12 +228,11 @@ h2 {
 }
 .hero .container {
   display: flex;
-  min-height: 90vh;
+  min-height: 100vh;
   align-items: flex-start;
   justify-content: space-between;
   border-bottom: 2px solid #9ca7c9;
   align-items: center;
-  min-height: 90vh;
 }
 @media (max-width: 768px) {
   .hero .container {
@@ -278,7 +286,7 @@ h2 {
 }
 .skills .container {
   display: flex;
-  min-height: 90vh;
+  min-height: 100vh;
   align-items: flex-start;
   justify-content: space-between;
   border-bottom: 2px solid #9ca7c9;
