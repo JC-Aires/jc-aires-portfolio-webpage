@@ -29,6 +29,7 @@ h2 {
   font-size: 32px;
   text-transform: uppercase;
   margin: 24px 0;
+  border-bottom: 2px solid white;
 }
 
 .container {
@@ -231,7 +232,6 @@ h2 {
   min-height: 100vh;
   align-items: flex-start;
   justify-content: space-between;
-  border-bottom: 2px solid #9ca7c9;
   align-items: center;
 }
 @media (max-width: 768px) {
@@ -270,6 +270,11 @@ h2 {
   text-decoration: none;
   color: #64ffda;
 }
+@media (max-width: 768px) {
+  .skills__items--bullet {
+    margin: 0 1em;
+  }
+}
 .skills__items li {
   flex: 0 0 31%;
   text-align: justify;
@@ -289,7 +294,9 @@ h2 {
   min-height: 100vh;
   align-items: flex-start;
   justify-content: space-between;
-  border-bottom: 2px solid #9ca7c9;
+  /* @media (max-width: 768px) {
+      width: 70%;
+  } */
 }
 .skills .container h2 {
   margin-bottom: 48px;
@@ -308,7 +315,8 @@ h2 {
 }
 @media (max-width: 768px) {
   .skills .container {
-    width: 70%;
+    width: 75%;
+    margin-bottom: 4em;
   }
 }
 
@@ -384,9 +392,6 @@ h2 {
   border-radius: 4px;
   margin-top: 4px;
 }
-.portfolio .container {
-  border-bottom: 2px solid #9ca7c9;
-}
 @media (max-width: 768px) {
   .portfolio .container {
     width: 75%;
@@ -460,6 +465,12 @@ h2 {
 }
 .contact .container {
   height: 80vh;
+}
+@media (max-width: 768px) {
+  .contact .container {
+    width: 75%;
+    margin-bottom: 4em;
+  }
 }
 
 footer {
