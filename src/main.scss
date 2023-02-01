@@ -15,7 +15,6 @@
     min-height: 100vh;
     align-items: flex-start;
     justify-content: space-between;
-    //border-bottom: 2px solid variaveis.$corDoTextoPrincipal;
 
     @media (max-width: 768px) {
         width: 70%;
@@ -63,7 +62,7 @@ h2 {
     }
 
     @media (max-width: 1023px) {
-        width: 80%;
+        max-width: 80%;
         text-align: center;
     }
 }
@@ -82,17 +81,13 @@ h2 {
     position: sticky;
     background-color: variaveis.$corDeFundo;
     // fix for AOS implementation and the stickymenu
-    width: 100%; 
+    //width: 100%; 
     z-index: 1; 
     [data-aos] { 
         pointer-events: none; 
         &.aos-animate { 
             pointer-events: auto; 
         } 
-    }
-
-    @media (max-width: 1023px) {
-        padding: 8px 16px;
     }
 
     &__item {
@@ -111,9 +106,7 @@ h2 {
                     color: variaveis.$corDeHighlight;
                     font-weight: bold;
                 }
-
-            }
-            
+            }           
         }
 
         &--resume {
@@ -135,6 +128,7 @@ h2 {
                     font-size: 12px;
                 }
             }
+
             &--resume {
                 padding: 4px 8px;
             }
@@ -291,7 +285,7 @@ h2 {
 
     &__items {
         display: flex;
-        gap: 32px;
+        gap: 1.5em;
         flex-wrap: wrap;
 
         @media (max-width: 768px) {
@@ -347,9 +341,6 @@ h2 {
             margin-bottom: 4em;
         }
 
-        /* @media (max-width: 768px) {
-            width: 70%;
-        } */
         @media (max-width: 768px) {
             width: 75%;
             margin-bottom: 4em;
@@ -361,7 +352,7 @@ h2 {
     scroll-margin-top: 80px;
     
     @media (max-width: 768px) {
-        scroll-margin-top: 100px;
+        scroll-margin-top: 104px;
     }
 
     &__header {
@@ -390,15 +381,16 @@ h2 {
             align-items: center;
             position: relative;
             height: 400px;
+            margin-bottom: 16px;
+            padding: 0 8px;
+            text-align: center;
+            border-radius: 4px;
+            background-color: variaveis.$corDoBotao;
 
             @media (max-width: 768px) {
                 height: 420px;
             }
 
-            margin-bottom: 48px;
-            text-align: center;
-            border-radius: 4px;
-            background-color: variaveis.$corDoBotao;
 
             h3 {
                 margin-top: 16px;
@@ -433,7 +425,6 @@ h2 {
     }
 
     .container {
-        //border-bottom: 2px solid variaveis.$corDoTextoPrincipal;
         
         @media (max-width: 768px) {
             width: 75%;
@@ -504,7 +495,7 @@ h2 {
     }
 
     .container {
-        height: 80vh;
+        height: 90vh;
 
         @media (max-width: 768px) {
             width: 75%;
