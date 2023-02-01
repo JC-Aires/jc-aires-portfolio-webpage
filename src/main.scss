@@ -22,6 +22,7 @@
 }
 
 @mixin button() {
+    
     &:hover {
         color: variaveis.$corDeHighlight;
         font-weight: bold;
