@@ -122,6 +122,9 @@ h2 {
 
 .hero {
   scroll-margin-top: 78px;
+  background-image: url(../images/backb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (max-width: 768px) {
   .hero {
