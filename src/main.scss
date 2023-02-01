@@ -81,7 +81,6 @@ h2 {
     position: sticky;
     background-color: variaveis.$corDeFundo;
     // fix for AOS implementation and the stickymenu
-    //width: 100%; 
     z-index: 1; 
     [data-aos] { 
         pointer-events: none; 
