@@ -173,7 +173,8 @@ h2 {
         &__name {
             font-family: 'Orbitron', sans-serif;
             animation: lights 5s 750ms linear infinite;
-            letter-spacing: 1px;
+            font-size: 2.8rem;
+            
 
             @keyframes lights {
                 0% {
@@ -225,8 +226,9 @@ h2 {
         
         &__minicv{
             font-size: 16px;
+            line-height: 1.5;
             display: inline-block;
-            width: 82%;
+            width: 88%;
             text-align: justify;
             margin-top: 16px;
 
@@ -238,7 +240,7 @@ h2 {
         }
 
         p {
-            font-size: 48px;
+            font-size: 24px;
 
             @media (max-width: 1023px) {
                 font-size: 32px;
@@ -300,6 +302,7 @@ h2 {
 
         &--bullet {
             list-style: inside;
+            line-height: 1.5;
 
             a {
                 text-decoration: none;
@@ -401,7 +404,7 @@ h2 {
             
             a {
                 text-decoration: none;
-                padding: 16px 24px;
+                padding: 8px 12px;
                 font-size: 16px;
                 background: transparent;
                 border: 2px solid variaveis.$corDeHighlight;
@@ -420,8 +423,9 @@ h2 {
 
             img {
                 width: calc(100% - 8px);
+                height: 10em;
                 border-radius: 4px;
-                margin-top: 4px;
+                margin-top: 0.5em;
             }
         }
     }

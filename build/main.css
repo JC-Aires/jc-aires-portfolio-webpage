@@ -147,7 +147,7 @@ h2 {
 .hero__details__name {
   font-family: "Orbitron", sans-serif;
   animation: lights 5s 750ms linear infinite;
-  letter-spacing: 1px;
+  font-size: 2.8rem;
 }
 @keyframes lights {
   0% {
@@ -173,8 +173,9 @@ h2 {
 }
 .hero__details__minicv {
   font-size: 16px;
+  line-height: 1.5;
   display: inline-block;
-  width: 82%;
+  width: 88%;
   text-align: justify;
   margin-top: 16px;
 }
@@ -186,7 +187,7 @@ h2 {
   }
 }
 .hero__details p {
-  font-size: 48px;
+  font-size: 24px;
 }
 @media (max-width: 1023px) {
   .hero__details p {
@@ -261,6 +262,7 @@ h2 {
 }
 .skills__items--bullet {
   list-style: inside;
+  line-height: 1.5;
 }
 .skills__items--bullet a {
   text-decoration: none;
@@ -363,7 +365,7 @@ h2 {
 }
 .portfolio__items article a {
   text-decoration: none;
-  padding: 16px 24px;
+  padding: 8px 12px;
   font-size: 16px;
   background: transparent;
   border: 2px solid #64ffda;
@@ -383,8 +385,9 @@ h2 {
 }
 .portfolio__items article img {
   width: calc(100% - 8px);
+  height: 10em;
   border-radius: 4px;
-  margin-top: 4px;
+  margin-top: 0.5em;
 }
 @media (max-width: 768px) {
   .portfolio .container {
