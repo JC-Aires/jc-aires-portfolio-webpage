@@ -81,14 +81,14 @@ h2 {
 }
 .menu__item li a:hover {
   color: #64ffda;
-  font-weight: bold;
+  font-weight: bolder;
 }
 .menu__item li a.active {
   color: #64ffda;
   font-weight: bold;
 }
 .menu__item--resume {
-  padding: 8px 16px;
+  padding: 6px 12px;
   color: #64ffda;
   font-size: 16px;
   background: transparent;
@@ -211,7 +211,7 @@ h2 {
 }
 .hero__details a:hover {
   color: #64ffda;
-  font-weight: bold;
+  font-weight: bolder;
 }
 @media (max-width: 768px) {
   .hero__details a {
@@ -376,7 +376,7 @@ h2 {
 }
 .portfolio__items article a:hover {
   color: #64ffda;
-  font-weight: bold;
+  font-weight: bolder;
 }
 @media (max-width: 768px) {
   .portfolio__items article a {
@@ -444,7 +444,7 @@ h2 {
 }
 .contact__items a:hover {
   color: #64ffda;
-  font-weight: bold;
+  font-weight: bolder;
 }
 @media (max-width: 768px) {
   .contact__items a {

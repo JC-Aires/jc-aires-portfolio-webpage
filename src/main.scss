@@ -25,7 +25,7 @@
     
     &:hover {
         color: variaveis.$corDeHighlight;
-        font-weight: bold;
+        font-weight: bolder;
     }
 }
 
@@ -110,7 +110,7 @@ h2 {
         }
 
         &--resume {
-            padding: 8px 16px;
+            padding: 6px 12px;
             color: variaveis.$corDeHighlight;
             font-size: 16px;
             background: transparent;
