@@ -1,3 +1,3 @@
-# jc-aires-portfolio_webpage
+# jc-aires-portfolio-webpage
 
-This portfolio webpage, created using Sass, Google Fonts, AOS and Font Awesome. Follows BEM best practices.
+My portfolio webpage, created using Sass, Google Fonts, AOS and Font Awesome. Follows BEM best practices.
